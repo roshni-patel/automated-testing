@@ -18,6 +18,7 @@ describe Card do
       expect {Card.new(0, :diamonds)}.must_raise ArgumentError
       expect {Card.new(14, :diamonds)}.must_raise ArgumentError
       expect {Card.new(14, :clovers)}.must_raise ArgumentError
+      expect {Card.new(0, :clovers)}.must_raise ArgumentError
     end
   end
 
